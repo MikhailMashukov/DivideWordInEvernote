@@ -1,6 +1,7 @@
 Small utility for exporting Word documents into Evernote. Just a pre-alpha version and not polished at all ("make yourself"), but maybe will be useful for somebody. It took almost a work day for me to implement-debug it.
 
 You can have your notes in Word with structure like
+```
 (heading 1) To read/watch
   (heading 2) Books to read
     (heading 3) Programming
@@ -11,10 +12,11 @@ You can have your notes in Word with structure like
 Useful Linux utilities
   Related to processes
   ...
+```
 
 But you can only copy-paste entire document into Evernote. Or to cut separate blocks manually.
 I had about 1000 notes in 6 main Word documents until recently decided to move to something else (and have chosen Evernote).
-So I have written this script. The script looks at headings at levels 2, 3 and 4 and generates notes' titles of the form <parent heading 2> / <heading 3> or <parent heading 3> / <heading 4>. I.e. you will get Books to read / Programming, Books to read / Psychology and so on.
+So I have written this script. The script looks at headings at levels 2, 3 and 4 and generates notes' titles of the form <parent heading 2> / <heading 3> or <parent heading 3> / <heading 4>. I.e. you will get "Books to read / Programming", "Books to read / Psychology" and so on.
 
 In order to cut you need
 
